@@ -22,61 +22,56 @@ public class Locals extends immoble{
 	}
 
 	public int calcularPrecio(int edad) {
-		int preciobase  =2800;
+		int preciobase  =50000;
 		int precioFinal = 0;
 
 		if (edad <15) {
-			precioFinal = preciobase - (preciobase*(int)0.1);
-			System.out.println("Precio siendo menor de 15  " + precioFinal);
-
+			precioFinal = preciobase - (int)((double)preciobase*0.1);
+			System.out.println("Años del Local "+edad + " = "+precioFinal);
 			if (super.getNum_quadrats() > 50) {
-
-				precioFinal = precioFinal + preciobase*(int)0.1;
-
+				precioFinal = precioFinal + (int)((double)preciobase*0.1);
+				System.out.println("Metros Cuadrados del Local "+super.getNum_quadrats()+ " = "+precioFinal);
 				if (this.num_finestres <=1 && this.num_finestres >=0) {
-					precioFinal = precioFinal - preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y ninguna ventana/1 ventana "+ precioFinal);
+					precioFinal = precioFinal - (int)((double)preciobase*0.2);
 				}else if(this.num_finestres >4) {
-					precioFinal = precioFinal + preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y por lo menos 4 ventanas "+ precioFinal);
+					precioFinal = precioFinal + (int)((double)preciobase*0.2);
 				}
-
 			}else if(super.getNum_quadrats() < 50){
 
 				if (this.num_finestres <=1 && this.num_finestres >=0) {
-					precioFinal = precioFinal - preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y ninguna ventana/1 ventana "+ precioFinal);
+					precioFinal = precioFinal - (int)((double)preciobase*0.2);
 				}else if(this.num_finestres >4) {
-					precioFinal = precioFinal + preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y por lo menos 4 ventanas "+ precioFinal);
+					precioFinal = precioFinal + (int)((double)preciobase*0.2);
 				}
 			}
 		}else {
-			precioFinal = preciobase - (preciobase*(int)0.2);
-			System.out.println("Precio siendo mayor de 15 " + precioFinal);
+			precioFinal = preciobase - (int)((double)preciobase*0.2);
+			System.out.println("Años del Piso "+edad + " = "+precioFinal);
 			if (super.getNum_quadrats() > 50) {
 
-				precioFinal = precioFinal + preciobase*(int)0.1;
-
+				precioFinal = precioFinal + (int)((double)preciobase*0.1);
+				System.out.println("Metros Cuadrados del Local "+super.getNum_quadrats()+ " = "+precioFinal);
 				if (this.num_finestres <=1 && this.num_finestres >=0) {
-					precioFinal = precioFinal - preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y ninguna ventana/1 ventana "+ precioFinal);
+					System.out.println("Num Ventanas "+ this.num_finestres + " ="+precioFinal);
+					precioFinal = precioFinal - (int)((double)preciobase*0.2);
 				}else if(this.num_finestres >4) {
-					precioFinal = precioFinal + preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y por lo menos 4 ventanas "+ precioFinal);
+					System.out.println("Num Ventanas "+ this.num_finestres + " ="+precioFinal);
+					precioFinal = precioFinal + (int)((double)preciobase*0.2);
 				}
 
 			}else if(super.getNum_quadrats() < 50){
 
 				if (this.num_finestres <=1 && this.num_finestres >=0) {
-					precioFinal = precioFinal - preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y ninguna ventana/1 ventana "+ precioFinal);
+					System.out.println("Num Ventanas "+ this.num_finestres + " ="+precioFinal);
+					precioFinal = precioFinal - (int)((double)preciobase*0.2);
 				}else if(this.num_finestres >4) {
-					precioFinal = precioFinal + preciobase*(int)0.2;
-					System.out.println("Precio con mas de 50 metros cuadrados y por lo menos 4 ventanas "+ precioFinal);
+					System.out.println("Num Ventanas "+ this.num_finestres + " ="+precioFinal);
+					precioFinal = precioFinal + (int)((double)preciobase*0.2);
 				}
 			}
 		}
+		System.out.println("================================");
+		System.out.println("El Precio del Local es: " + precioFinal);
 		return precioFinal;
 	}
 }
