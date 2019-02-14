@@ -17,7 +17,7 @@ public class Bici extends Vehicle{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"Bici [tipo_bici=" + tipo_bici + "]";
+		return "Bici-->"+super.toString()+"[tipo_bici=" + tipo_bici + "]";
 	}
 	
 	

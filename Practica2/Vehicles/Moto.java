@@ -18,6 +18,6 @@ public class Moto extends Vehicle{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"Moto [cilindrada=" + cilindrada + "]";
+		return "Moto-->"+super.toString()+" [cilindrada=" + cilindrada + "]";
 	}
 }

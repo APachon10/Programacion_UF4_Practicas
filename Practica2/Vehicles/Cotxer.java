@@ -17,7 +17,7 @@ public class Cotxer extends Vehicle{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"Cotxer [puertas=" + puertas + "]";
+		return "Cotxer-->"+super.toString()+" [puertas=" + puertas + "]";
 	}
 	
 	

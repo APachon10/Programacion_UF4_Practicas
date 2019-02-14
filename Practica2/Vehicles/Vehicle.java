@@ -39,8 +39,8 @@ public class Vehicle {
 	//To String 
 	@Override
 	public String toString() {
-		return "Vehicle [num_ocupants=" + num_ocupants + ", num_rodes=" + num_rodes + ", data_matriculacio="
-				+ data_matriculacio + ", mitja_despl=" + mitja_despl + "]";
+		return "num_ocupants=" + num_ocupants + ", num_rodes=" + num_rodes + ", data_matriculacio="
+				+ data_matriculacio + ", mitja_despl=" + mitja_despl;
 	}
 	
 }

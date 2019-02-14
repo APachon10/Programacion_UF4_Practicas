@@ -17,7 +17,7 @@ public class Camio extends Vehicle{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"Camio [height=" + height + "]";
+		return "Camio-->"+super.toString()+"[height=" + height + "]";
 	}
 	
 	

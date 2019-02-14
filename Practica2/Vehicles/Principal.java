@@ -11,12 +11,13 @@ public class Principal {
 		int i=0;
 		ArrayList<Vehicle> vehiculos = new ArrayList<Vehicle>();
 		while (i<2) {
-			System.out.println("i: ");
 			System.out.println("Que Vehiculo quieres crear? ");
 			tipo_vehiculo=recogerCadenas();
 			vehiculos.add(crearVehiculos(tipo_vehiculo));
 			i++;
 		}
+		System.out.println("Vehiculos Creados");
+		System.out.println("======================");
 		mostrarArrayList(vehiculos);
 	}
 	public static String recogerCadenas() {
@@ -82,6 +83,62 @@ public class Principal {
 			m=new Cotxer(num_ocu, num_r, data_matr, mitja_despl, num_puertas);
 			System.out.println("=======================");
 			System.out.println("Vehiculo  Creado ");
+			break;
+		case "Camio":
+			int altura  =0 ;
+			//Pedimos los Datos 
+			System.out.print("Ocupantes: ");
+			num_ocu = recogerEnteros();
+			System.out.print("Ruedas: ");
+			num_r = recogerEnteros();
+			//Pedimos la fecha de Matriculacion 
+			System.out.print("Fecha Matriculacion:");
+			data_matr =recogerCadenas();
+			System.out.print("Medio de Desplazamiento: ");
+			mitja_despl = recogerCadenas();
+			System.out.print("Altura: ");
+			altura = recogerEnteros();
+			m=new Camio(num_ocu, num_r, data_matr, mitja_despl, altura);
+			System.out.println("=======================");
+			System.out.println("Vehiculo  Creado ");
+			break;
+		case "Bici":
+			String tipo_bici="";
+			//Pedimos los Datos 
+			System.out.print("Ocupantes: ");
+			num_ocu = recogerEnteros();
+			System.out.print("Ruedas: ");
+			num_r = recogerEnteros();
+			//Pedimos la fecha de Matriculacion 
+			System.out.print("Fecha Matriculacion:");
+			data_matr =recogerCadenas();
+			System.out.print("Medio de Desplazamiento: ");
+			mitja_despl = recogerCadenas();
+			System.out.print("Tipo de Bici: ");
+			tipo_bici = recogerCadenas();
+			m=new Bici(num_ocu, num_r, data_matr, mitja_despl, tipo_bici);
+			System.out.println("=======================");
+			System.out.println("Vehiculo  Creado ");
+			break;
+		case "Lancha":
+			String casco  ="";
+			//Pedimos los Datos 
+			System.out.print("Ocupantes: ");
+			num_ocu = recogerEnteros();
+			System.out.print("Ruedas: ");
+			num_r = recogerEnteros();
+			//Pedimos la fecha de Matriculacion 
+			System.out.print("Fecha Matriculacion:");
+			data_matr =recogerCadenas();
+			System.out.print("Medio de Desplazamiento: ");
+			mitja_despl = recogerCadenas();
+			System.out.println("Tipo de Casco ");
+			casco = recogerCadenas();
+			
+			m=new Llanxa(num_ocu, num_r, data_matr, mitja_despl, casco);
+			System.out.println("=======================");
+			System.out.println("Vehiculo  Creado ");
+			System.out.println("=======================");
 			break;
 		}
 		return m;

@@ -17,7 +17,7 @@ public class Llanxa extends Vehicle{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"Llanxa [casco=" + casco + "]";
+		return "Llanxa--> "+super.toString()+" [casco=" + casco + "]";
 	}
 	
 	
