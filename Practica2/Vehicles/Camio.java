@@ -7,5 +7,19 @@ public class Camio extends Vehicle{
 		super(num_ocupants, num_rodes, data_matriculacio, mitja_despl);
 		this.height = height;
 	}
+	//Getters
+	public int getHeight() {
+		return height;
+	}
+	//Setters
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	@Override
+	public String toString() {
+		return super.toString()+"Camio [height=" + height + "]";
+	}
+	
+	
 	
 }

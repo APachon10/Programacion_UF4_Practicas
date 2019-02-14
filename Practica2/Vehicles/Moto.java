@@ -2,7 +2,8 @@ package Vehicles;
 
 public class Moto extends Vehicle{
 	private double cilindrada;
-	//Constructors 
+	//Constructors
+	
 	public Moto(int num_ocupants, int num_rodes, String data_matriculacio, String mitja_despl, double cilindrada) {
 		super(num_ocupants, num_rodes, data_matriculacio, mitja_despl);
 		this.cilindrada = cilindrada;
