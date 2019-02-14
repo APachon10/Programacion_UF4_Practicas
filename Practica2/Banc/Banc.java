@@ -1,10 +1,13 @@
 package Banc;
 
+import java.util.Scanner;
+
 public class Banc {
 	private String nom_Compte,nom_Client;
-	private int deposit,saldo;
+	private int deposit;
+	private double saldo;
 	//Constructors
-	public Banc(String nom_Compte, String nom_Client, int deposit, int saldo) {
+	public Banc(String nom_Compte, String nom_Client, int deposit, double saldo) {
 		this.nom_Compte = nom_Compte;
 		this.nom_Client = nom_Client;
 		this.deposit = deposit;
@@ -20,7 +23,7 @@ public class Banc {
 	public int getDeposit() {
 		return deposit;
 	}
-	public int getSaldo() {
+	public double getSaldo() {
 		return saldo;
 	}
 	//Setters
@@ -33,16 +36,22 @@ public class Banc {
 	public void setDeposit(int deposit) {
 		this.deposit = deposit;
 	}
-	public void setSaldo(int saldo) {
+	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 	//To String 
 	@Override
 	public String toString() {
-		return "Banc [nom_Compte=" + nom_Compte + ", nom_Client=" + nom_Client + ", deposit=" + deposit + ", saldo="
-				+ saldo + "]";
+		return "nom_Compte=" + nom_Compte + ", nom_Client=" + nom_Client + ", deposit=" + deposit + ", saldo="+ saldo + "]";
 	}
-	//Metodos 
-	
-	
+	//Metodos para Disminuir/Aumentar el Saldo
+	public double aumentarSaldo(double cantidad) {
+		this.saldo = cantidad + this.saldo;
+		return this.saldo;
+	}
+	public double disminuirSaldo(double cantidad_Extraida) {
+		this.saldo = this.saldo-cantidad_Extraida;
+		return this.saldo;
+	}
+
 }
