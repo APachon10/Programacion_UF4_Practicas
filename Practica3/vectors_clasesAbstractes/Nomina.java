@@ -30,20 +30,7 @@ public class Nomina{
 					op=recogerEnteros();
 					switch (op) {
 					case 1:
-						System.out.print("Nombre Empleado:");
-						nom=recogerCadenas();
-						System.out.print("Ciudad Origen :");
-						ciutatO=recogerCadenas();
-						System.out.print("Lugar de Trabajo:");
-						lloc=recogerCadenas();
-						System.out.print("Horas Trabajadas:");
-						horas=recogerEnteros();
-						//Ponemos los Datos dentro del Objeto 
-						e = new Caixer(nom, ciutatO, lloc, horas);
-						empleados[i]=e;
-						System.out.println("===================");
-						System.out.println("Cajero Registrado");
-						System.out.println("===================");
+						
 						break;
 					case 2:
 						System.out.print("Nombre Empleado:");
@@ -116,6 +103,9 @@ public class Nomina{
 	public void mostrarDatos(Tipus_Empleat [] emple ) {
 		System.out.println(Arrays.toString(emple));
 	}
+//	public Caixer insertCaixer() {
+//		
+//	}
 	//Metodos para recogerDatps
 	public static int recogerEnteros() {
 		Scanner scan = new Scanner(System.in);
