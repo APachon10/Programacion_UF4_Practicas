@@ -1,4 +1,4 @@
-package SuperMerk2;
+package superMerk2;
 
 public abstract class Tipus_Empleat {
 	private String nom,ciudatO,lloc;

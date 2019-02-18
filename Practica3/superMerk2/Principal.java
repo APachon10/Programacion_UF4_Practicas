@@ -1,4 +1,4 @@
-package SuperMerk2;
+package superMerk2;
 
 public class Principal {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package SuperMerk2;
+package superMerk2;
 
 public class Mostrador extends Tipus_Empleat{
 	private int vendes;

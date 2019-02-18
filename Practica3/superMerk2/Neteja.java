@@ -1,4 +1,4 @@
-package SuperMerk2;
+package superMerk2;
 
 public class Neteja extends Tipus_Empleat{
 	//Contructors
