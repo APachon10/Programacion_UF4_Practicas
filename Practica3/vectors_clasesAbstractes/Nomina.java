@@ -5,14 +5,25 @@ import java.util.Scanner;
 public class Nomina{
 	Tipus_Empleat empleados [] = new Tipus_Empleat[5];
 	//Constructors
-	
+	public Nomina(Tipus_Empleat[] empleados) {
+		super();
+		this.empleados = empleados;
+	}
 	//Metodos
 	public Tipus_Empleat insereixEmpleat(Tipus_Empleat e ) {
 		boolean salir=false;
-		int op=0;
 		do {
-			
-		} while (!salir);
+			for (int i = 0; i < empleados.length; i++) {
+				if (i>empleados.length) {
+					salir=true;
+				}else {
+					if (empleados[i] == null) {
+						empleados[i]=e;
+						salir=true;
+					}
+				}
+			}
+		}while (!salir);
 		return e;
 	}
 	public void eliminaNeteja() {
@@ -29,5 +40,26 @@ public class Nomina{
 			}
 		}
 	}
+	public double costNomina() {
+		double sal = 0;
+		for (int i = 0; i < empleados.length; i++) {
+			sal = sal + empleados[i].SalariDiari();
+		}
+		return sal;
+	}
+	public void quantitatCaixeres() {
+		int cont=0;
+		for (int i = 0; i < empleados.length; i++) {
+			if (empleados[i] instanceof Caixer) {
+				cont++;
+			}
+		}
+		System.out.println("El Numero de Cajeras es: "+cont);
+	}
+	//Metodos para recogerDatps
+	public static int recogerEnteros() {
+		Scanner scan = new Scanner(System.in);
+		int numero = scan.nextInt();
+		return numero;
+	}
 }
- 
