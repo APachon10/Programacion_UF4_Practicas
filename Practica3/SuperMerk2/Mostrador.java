@@ -26,17 +26,13 @@ public class Mostrador extends Tipus_Empleat{
 	@Override
 	public double SalariDiari() {
 		double sal =0;
-		double sal_base = 50d;
-		
-		for (int i = 0; i < getVendes(); i++) {
-			double ventas =(double)i*15/100;
-			sal = sal_base + ventas;
-		}
+		double sal_base = 50;
+		sal = sal_base + getVendes()*0.15;
 		return sal;
 	}
 	@Override
 	public String toString() {
-		return "Mostrador" +super.toString()+"[vendes=" + vendes + "]";
+		return "Mostrador " +super.toString()+"[vendes=" + vendes + "]";
 	}
 	
 	

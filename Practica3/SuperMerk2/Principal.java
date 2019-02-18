@@ -22,7 +22,7 @@ public class Principal {
 		System.out.println("========================");
 		
 		//Creamos un Objeto de la clase Mostrador
-		Mostrador m= new Mostrador("Alberto","Madrid", "Barcelona",2);
+		Mostrador m= new Mostrador("Alberto","Madrid", "Barcelona",50);
 		System.out.println("Mostrar");
 		System.out.println("========================");
 		System.out.println("Lloc --> "+m.lloc());
