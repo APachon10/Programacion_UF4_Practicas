@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Nomina{
-	Tipus_Empleat empleados [] = new Tipus_Empleat[5];
+	//Tipus_Empleat empleados [] = new Tipus_Empleat[];
 	//Constructors
 	public Nomina(Tipus_Empleat[] empleados) {
 		super();
@@ -92,16 +92,25 @@ public class Nomina{
 			}
 		}
 	}
-	public int  quantsCornella() {
+	public void  quantsCornella() {
 		int cont=0;
-		for (int i = 0; i < empleados.length; i++) {
+		/*for (int i = 0; i < empleados.length; i++) {
 			if (empleados[i].getCiutatO().equalsIgnoreCase("Cornella")) {
 				System.out.println("Hola");
 				cont++;
+				System.out.println("Prueba");
+			}
+			
+		}*/
+		
+		for(Tipus_Empleat empleat: empleados) {
+			System.out.println(empleat.getNom());
+			if(empleat.getCiutatO().equals("Cornella")) {
+				cont++;
+				System.out.println("Hello");
 			}
 		}
 		System.out.println("Hay "+cont +" de Trabajadores que son de Cornella");
-		return cont;
 	}
 	public double costNomina() {
 		double sal = 0;
