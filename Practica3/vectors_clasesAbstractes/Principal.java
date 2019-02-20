@@ -27,7 +27,7 @@ public class Principal {
 				m.eliminaNeteja();
 				break;
 			case 3:
-				m.quantsCornella();
+				1m.quantsCornella();
 				break;
 			case 5:
 				m.quantitatCaixeres();
