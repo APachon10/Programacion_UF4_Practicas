@@ -96,6 +96,7 @@ public class Nomina{
 		int cont=0;
 		for (int i = 0; i < empleados.length; i++) {
 			if (empleados[i].getCiutatO().equalsIgnoreCase("Cornella")) {
+				System.out.println("Hola");
 				cont++;
 			}
 		}
@@ -119,11 +120,12 @@ public class Nomina{
 		System.out.println("El Numero de Cajeras es: "+cont);
 		return cont;
 	}
+	
+	//Metodo Para mostrar los datos del Array a cada momento 
 	public void mostrarDatos(Tipus_Empleat [] emple ) {
 		System.out.println(Arrays.toString(emple));
 	}
-
-	//Metodos para recogerDatps
+	//Metodos para recoger Datos
 	public static int recogerEnteros() {
 		Scanner scan = new Scanner(System.in);
 		int numero = scan.nextInt();
