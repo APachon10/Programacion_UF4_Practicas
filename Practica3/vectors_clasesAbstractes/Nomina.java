@@ -15,8 +15,10 @@ public class Nomina{
 		e= new Caixer(null, null, null, 0);
 		boolean salir=false;
 		int op=0;
+		int horas=0;
 		String nom,lloc,ciutatO;
-		int horas=0,vendas=0;
+		//-----------------------------------
+		int vendas=0;
 		int i=0;
 		do {
 			if (i>empleados.length) {
@@ -30,7 +32,20 @@ public class Nomina{
 					op=recogerEnteros();
 					switch (op) {
 					case 1:
+						System.out.print("Nombre Empleado:");
+						nom=recogerCadenas();
+						System.out.print("Ciudad Origen :");
+						ciutatO=recogerCadenas();
+						System.out.print("Lugar de Trabajo:");
+						lloc=recogerCadenas();
+						System.out.print("Horas Trabajadas :");
+						horas=recogerEnteros();
 						
+						e= new Caixer(nom, ciutatO, lloc, horas);
+						empleados[i]=e;
+						System.out.println("====================");
+						System.out.println("Cajero Registrado");
+						System.out.println("====================");
 						break;
 					case 2:
 						System.out.print("Nombre Empleado:");
@@ -77,12 +92,15 @@ public class Nomina{
 			}
 		}
 	}
-	public void quantsCornella() {
+	public int  quantsCornella() {
+		int cont=0;
 		for (int i = 0; i < empleados.length; i++) {
 			if (empleados[i].getCiutatO().equalsIgnoreCase("Cornella")) {
-				System.out.println("Hola");
+				cont++;
 			}
 		}
+		System.out.println("Hay "+cont +" de Trabajadores que son de Cornella");
+		return cont;
 	}
 	public double costNomina() {
 		double sal = 0;
@@ -91,7 +109,7 @@ public class Nomina{
 		}
 		return sal;
 	}
-	public void quantitatCaixeres() {
+	public int quantitatCaixeres() {
 		int cont=0;
 		for (int i = 0; i < empleados.length; i++) {
 			if (empleados[i] instanceof Caixer) {
@@ -99,13 +117,12 @@ public class Nomina{
 			}
 		}
 		System.out.println("El Numero de Cajeras es: "+cont);
+		return cont;
 	}
 	public void mostrarDatos(Tipus_Empleat [] emple ) {
 		System.out.println(Arrays.toString(emple));
 	}
-//	public Caixer insertCaixer() {
-//		
-//	}
+
 	//Metodos para recogerDatps
 	public static int recogerEnteros() {
 		Scanner scan = new Scanner(System.in);

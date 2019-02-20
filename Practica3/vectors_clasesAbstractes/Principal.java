@@ -23,6 +23,15 @@ public class Principal {
 				Tipus_Empleat e = null;
 				m.insereixEmpleat(e);
 				break;
+			case 2:
+				m.eliminaNeteja();
+				break;
+			case 3:
+				m.quantsCornella();
+				break;
+			case 5:
+				m.quantitatCaixeres();
+				break;
 			case 7:
 				m.mostrarDatos(empleados);
 				break;
