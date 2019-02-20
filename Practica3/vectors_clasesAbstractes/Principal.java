@@ -1,10 +1,11 @@
 package vectors_clasesAbstractes;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Principal {
 	public static void main(String[] args) {
-		Tipus_Empleat empleados [] = new Tipus_Empleat[5];
+		ArrayList <Tipus_Empleat>empleados= new ArrayList<Tipus_Empleat>();
 		Nomina m = new Nomina(empleados);
 		int op=0;
 	
@@ -27,7 +28,7 @@ public class Principal {
 				m.eliminaNeteja();
 				break;
 			case 3:
-				1m.quantsCornella();
+				m.quantsCornella();
 				break;
 			case 5:
 				m.quantitatCaixeres();
