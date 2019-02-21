@@ -27,7 +27,7 @@ public class Neteja extends Tipus_Empleat{
 	//To String 
 	@Override
 	public String toString() {
-		return super.toString();
+		return "Personal de Limpieza--> " + super.toString();
 	}
 	
 	

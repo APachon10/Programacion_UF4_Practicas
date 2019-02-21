@@ -80,45 +80,54 @@ public class Nomina{
 	public void eliminaNeteja() {
 		for (int i = 0; i < empleados.size(); i++) {
 			if (empleados.get(i) instanceof Neteja) {
-				System.out.println("Hola");
 			}
 		}
 	}
 	public void  quantsCornella() {
 		int cont=0;
 		for (int i = 0; i < empleados.size(); i++) {
-			if (empleados.get(i).getCiutatO().equalsIgnoreCase("Cornella")) {
-				System.out.println("Hola");
+			if (empleados.get(i).getCiutatO().equalsIgnoreCase("Cornella")) {		
 				cont++;
-				System.out.println("Prueba");
 			}
 
 		}
+		System.out.println("=====================");
 		System.out.println("Hay "+cont +" de Trabajadores que son de Cornella");
+		System.out.println("=====================");
 	}
 	public double costNomina() {
 		double sal = 0;
+		System.out.println("==============");
 		for (int i = 0; i < empleados.size(); i++) {
 			sal = sal + empleados.get(i).SalariDiari();
+			System.out.println("Salario ---> "+ sal);
 		}
+		System.out.println("==============");
+		System.out.println("El coste Total de la nomina és de : "+sal);
+		System.out.println("==============");
 		return sal;
 	}
 	public int quantitatCaixeres() {
 		int cont=0;
+		System.out.println("==============");
 		for (int i = 0; i < empleados.size(); i++) {
 			if (empleados.get(i) instanceof Caixer) {
 				cont++;
 			}
 		}
+		System.out.println("==============");
 		System.out.println("El Numero de Cajeras es: "+cont);
+		System.out.println("==============");
 		return cont;
 	}
 
 	//Metodo Para mostrar los datos del Array a cada momento 
 	public void mostrarDatos(ArrayList <Tipus_Empleat> emple) {
+		System.out.println("==============");
 		for (int i = 0; i < emple.size(); i++) {
 			System.out.println(emple.get(i));
 		}
+		System.out.println("==============");
 	}
 	//Metodos para recoger Datos
 	public static int recogerEnteros() {

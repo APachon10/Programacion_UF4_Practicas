@@ -32,7 +32,7 @@ public class Mostrador extends Tipus_Empleat{
 	}
 	@Override
 	public String toString() {
-		return "Mostrador " +super.toString()+"[vendes=" + vendes + "]";
+		return "Mostrador-->" +super.toString()+"[vendes=" + vendes + "]";
 	}
 	
 	
