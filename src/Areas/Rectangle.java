@@ -23,7 +23,6 @@ public class Rectangle {
 	public void setheight(double height) {
 		this.height = height;
 	}
-	
 	//To String
 	@Override
 	public String toString() {

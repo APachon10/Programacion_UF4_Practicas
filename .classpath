@@ -2,7 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+	<classpathentry kind="src" path="Practica3"/>
+>>>>>>> Practica3
 	<classpathentry kind="src" path="Practica2"/>
 >>>>>>> bfed0dddeb2b3ee061ddcb7b5598e3cb6837308d
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
