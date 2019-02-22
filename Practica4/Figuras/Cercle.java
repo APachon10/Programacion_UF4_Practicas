@@ -4,8 +4,10 @@ public class Cercle extends Figura{
 	private double radi;
 	//Constructors
 	public Cercle() {}
-	public Cercle(double radi) {
-		this.radi = radi;
+
+	public Cercle(String color, double area,double radi) {
+		super(color, area);
+		this.radi=radi;
 	}
 	//Getters
 	public double getRadi() {

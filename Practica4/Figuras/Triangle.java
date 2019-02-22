@@ -4,9 +4,10 @@ public class Triangle extends Figura{
 	private double base,height;
 	//Constructors
 	public Triangle() {};
-	public Triangle(double base, double height) {
-		this.base = base;
-		this.height = height;
+	public Triangle(String color, double area,double base,double height) {
+		super(color, area);
+		this.base=base;
+		this.height=height;
 	}
 	//Getters
 	public double getBase() {

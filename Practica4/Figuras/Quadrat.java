@@ -6,8 +6,8 @@ public class Quadrat extends Figura{
 	public Quadrat() {
 
 	}
-	public Quadrat(double lado) {
-		super();
+	public Quadrat(String color,double area,double lado) {
+		super(color,area);
 		this.lado = lado;
 	}
 	//Getters
@@ -29,7 +29,5 @@ public class Quadrat extends Figura{
 		res=lado*lado;
 		super.setArea(res);
 		return res;
-		
 	}
-
 }
