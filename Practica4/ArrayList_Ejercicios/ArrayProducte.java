@@ -16,6 +16,7 @@ public class ArrayProducte extends Producte{
 	public Producte insertarProducto(Producte e) {
 		int codigo=0;
 		boolean salir=false;
+		System.out.println("===================");
 		for (int i = 0; i < productos.size(); i++) {
 			while (!salir) {
 				System.out.print("Codigo: ");
@@ -42,15 +43,25 @@ public class ArrayProducte extends Producte{
 		e= new Producte(codigo, cantidad, nombre, tipo, cantidad);
 		//Lo metemos dentro del Array 
 		productos.add(e);
+		System.out.println("===================");
+		System.out.println("Producto Insertado");
+		System.out.println("===================");
 		return e;
 	}
 	public double aumentarPrecioOficina() {
 		double aumento=0;
+		System.out.println("============================");
 		for (int i = 0; i < productos.size(); i++) {
 			if (productos.get(i).getTipe().equalsIgnoreCase("Oficina")) {
-				aumento = (double) productos.get(i).getPrice()*0.10; 
+				System.out.println("Precio antes del Aumento: "+ productos.get(i).getPrice());
+				aumento = (double) productos.get(i).getPrice() + productos.get(i).getPrice()*10/100;
+				productos.get(i).setPrice(aumento);
+				System.out.println("Precio despues del Aumento: "+aumento);
+			}else {
+				System.out.println("No existe ningun Producto de tipo Oficina");
 			}
 		}
+		System.out.println("=============================");
 		return aumento;
 	}
 	public ArrayList eliminarProductosEstocCero(ArrayList<Producte >pro) {
@@ -62,9 +73,11 @@ public class ArrayProducte extends Producte{
 		return pro;
 	} 
 	public void mostrarArrayList(ArrayList<Producte >pro) {
+		System.out.println("===================");
 		for (int i = 0; i < pro.size(); i++) {
 			System.out.println(pro.get(i));
 		}
+		System.out.println("===================");
 	}
 	//Metodos para recoger Datos
 	public static int recogerEnteros() {

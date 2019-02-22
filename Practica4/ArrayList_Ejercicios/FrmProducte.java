@@ -27,6 +27,10 @@ public class FrmProducte {
 				ap.insertarProducto(e);
 				break;
 			case 2 :
+				ap.aumentarPrecioOficina();
+				break;
+			case 3:
+				ap.eliminarProductosEstocCero(productos);
 				break;
 			case 4:
 				ap.mostrarArrayList(productos);
