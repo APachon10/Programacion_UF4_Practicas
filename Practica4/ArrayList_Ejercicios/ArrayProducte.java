@@ -6,19 +6,28 @@ import java.util.Scanner;
 public class ArrayProducte extends Producte{
 	ArrayList<Producte >productos = new ArrayList<Producte>(); 
 
+	public ArrayProducte(ArrayList<Producte> productos) {
+		this.productos = productos;
+	}
 	public ArrayProducte(int code, int stock, String name, String tipe, double price) {
 		super(code, stock, name, tipe, price);
 	}
 	//Metodos
 	public Producte insertarProducto(Producte e) {
 		int codigo=0;
+		boolean salir=false;
 		for (int i = 0; i < productos.size(); i++) {
-			System.out.print("Codigo: ");
-			codigo = recogerEnteros();
-			if (productos.get(i).getCode()==codigo) {
-				System.out.println("Este codigo ya existe ");
-			}else {
-				codigo = codigo;
+			while (!salir) {
+				System.out.print("Codigo: ");
+				codigo = recogerEnteros();
+				if (productos.get(i).getCode()==codigo) {
+					System.out.println("Este codigo ya existe ");
+					salir=false;
+				}else {
+					codigo = codigo;
+					salir=true;
+				}
+
 			}
 		}
 		System.out.print("Nombre Producto : ");
