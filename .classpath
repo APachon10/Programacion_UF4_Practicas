@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src"></classpathentry>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +13,6 @@
 >>>>>>> Practica3
 	<classpathentry kind="src" path="Practica2"/>
 >>>>>>> bfed0dddeb2b3ee061ddcb7b5598e3cb6837308d
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"></classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
