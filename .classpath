@@ -3,8 +3,12 @@
 	<classpathentry kind="src" path="src"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+	<classpathentry kind="src" path="Practica4"/>
+>>>>>>> Practica4
 	<classpathentry kind="src" path="Practica3"/>
 >>>>>>> Practica3
 	<classpathentry kind="src" path="Practica2"/>
