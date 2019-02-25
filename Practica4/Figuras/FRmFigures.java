@@ -99,7 +99,7 @@ public class FRmFigures {
 			}
 		}
 	}
-	public double sumarAreaCirculos() {
+	public double sumarAreaCirculos(ArrayList<Figura> fig) {
 		
 	}
 }
