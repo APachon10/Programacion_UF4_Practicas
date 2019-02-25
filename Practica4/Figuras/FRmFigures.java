@@ -9,7 +9,9 @@ public class FRmFigures {
 		FRmFigures programa = new FRmFigures();
 	}
 	public void menu() {
-		System.out.println("Que Quieres Hacer?");
+		System.out.println("Que Quieres Hacer?"
+				+ "\n1 - Crear Figura "
+				+ "\n2 -");
 	}
 	public Figura insertarFigura(ArrayList<Figura> fig,Figura e ) {
 		if (fig.size() >10 ) {
@@ -19,7 +21,7 @@ public class FRmFigures {
 			double base,altura,r,lado;
 			boolean salir=false;
 			do {
-				System.out.println("Que figura quieres crear? "
+				System.out.println("Que Figura quieres crear? "
 						+ "\n1 - Cercle"
 						+ "\n2 - Triangle"
 						+ "\n3 - Quadrat");
@@ -59,6 +61,7 @@ public class FRmFigures {
 					lado = recogerDecimales();
 					
 					e= new Quadrat(color,0,lado);
+					e.calcularArea();
 					fig.add(e);
 					
 					System.out.println("=====================");
@@ -84,5 +87,19 @@ public class FRmFigures {
 		Scanner scan = new Scanner(System.in);
 		double numero= scan.nextDouble();
 		return numero;
+	}
+	public void contarFiguras(ArrayList<Figura> fig) {
+		for (int i = 0; i < fig.size(); i++) {
+			if (fig.get(i) instanceof Cercle) {
+				
+			}else if(fig.get(i) instanceof Quadrat) {
+				
+			}else if (fig.get(i) instanceof Triangle) {
+				
+			}
+		}
+	}
+	public double sumarAreaCirculos() {
+		
 	}
 }
