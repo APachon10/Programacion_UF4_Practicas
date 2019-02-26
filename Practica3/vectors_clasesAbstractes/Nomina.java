@@ -11,7 +11,7 @@ public class Nomina{
 		super();
 		this.empleados = empleados;
 	}
-	//Metodos
+	//Metodos Propios de la Clase 
 	public Tipus_Empleat insereixEmpleat(Tipus_Empleat e ) {
 		e= new Caixer(null, null, null, 0);
 		boolean salir=false;
@@ -20,6 +20,7 @@ public class Nomina{
 		String nom,lloc,ciutatO;
 		//-----------------------------------
 		int vendas=0;
+		System.out.println("==============");
 		do {
 			System.out.println("Que tipo de Empleado quieres crear? "
 					+ "\n1 - Caixer"
@@ -28,6 +29,7 @@ public class Nomina{
 			op=recogerEnteros();
 			switch (op) {
 			case 1:
+				System.out.println("==============");
 				System.out.print("Nombre Empleado:");
 				nom=recogerCadenas();
 				System.out.print("Ciudad Origen :");
@@ -44,6 +46,7 @@ public class Nomina{
 				System.out.println("====================");
 				break;
 			case 2:
+				System.out.println("==============");
 				System.out.print("Nombre Empleado:");
 				nom=recogerCadenas();
 				System.out.print("Ciudad Origen :");
@@ -60,6 +63,7 @@ public class Nomina{
 				System.out.println("===================");
 				break;
 			case 3:
+				System.out.println("==============");
 				System.out.print("Nombre Empleado:");
 				nom=recogerCadenas();
 				System.out.print("Ciudad Origen :");
@@ -120,7 +124,23 @@ public class Nomina{
 		System.out.println("==============");
 		return cont;
 	}
-
+	public double salarioPromedio() {
+		int cont=0;
+		double sal=0;
+		double media=0;
+		for (int i = 0; i < empleados.size(); i++) {
+			System.out.println("sal --> "+sal);
+			cont++;
+			System.out.println("sal --> "+empleados.get(i).SalariDiari());
+			sal = sal + empleados.get(i).SalariDiari();
+			
+		}
+		media=sal/cont;
+		System.out.println("==============");
+		System.out.println("El Salario Promedio es de : "+ media);
+		System.out.println("==============");
+		return media;
+	}
 	//Metodo Para mostrar los datos del Array a cada momento 
 	public void mostrarDatos(ArrayList <Tipus_Empleat> emple) {
 		System.out.println("==============");

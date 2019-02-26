@@ -18,6 +18,7 @@ public class Principal {
 					+ "\n5 - Ver cantidad de Cajeros en Nomina"
 					+ "\n6 - Sueldo Promedio"
 					+ "\n7 - Mostrar Array");
+			System.out.println("==============");
 			System.out.print("Opcion: ");
 			op=m.recogerEnteros();
 			switch (op) {
@@ -36,6 +37,9 @@ public class Principal {
 				break;
 			case 5:
 				m.quantitatCaixeres();
+				break;
+			case 6:
+				m.salarioPromedio();
 				break;
 			case 7:
 				m.mostrarDatos(empleados);

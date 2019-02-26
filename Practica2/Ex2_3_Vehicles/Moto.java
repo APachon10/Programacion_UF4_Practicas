@@ -1,4 +1,4 @@
-package Vehicles;
+package Ex2_3_Vehicles;
 
 public class Moto extends Vehicle{
 	private double cilindrada;

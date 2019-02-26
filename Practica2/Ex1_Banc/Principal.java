@@ -1,4 +1,4 @@
-package Banc;
+package Ex1_Banc;
 
 import java.util.Scanner;
 

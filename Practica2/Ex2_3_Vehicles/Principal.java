@@ -1,4 +1,4 @@
-package Vehicles;
+package Ex2_3_Vehicles;
 
 import java.util.ArrayList;
 import java.util.Scanner;

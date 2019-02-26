@@ -125,6 +125,7 @@ public class FRmFigures {
 		double numero= scan.nextDouble();
 		return numero;
 	}
+	//Metodos Propios de la clase
 	public void contarFiguras(ArrayList<Figura> fig) {
 		int cont_cercles=0,cont_triangle=0,cont_quadrat=0;
 		System.out.println("=======================");

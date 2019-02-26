@@ -1,4 +1,4 @@
-package Banc;
+package Ex1_Banc;
 
 public class Cliente extends Banc{
 	private String apellidos,DNI;
