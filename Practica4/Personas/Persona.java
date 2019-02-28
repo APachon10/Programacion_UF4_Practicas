@@ -2,7 +2,7 @@ package Personas;
 
 public class Persona {
 	//Atributos
-	private String nom;
+	private String nom,DNI;
 	private int edat;
 	private double altura;
 	private char sexe;
@@ -12,28 +12,19 @@ public class Persona {
 		
 	}
 	//Constructor Generico
-	public Persona(String nom, int edat, double altura, char sexe, boolean casat) {
+	public Persona(String nom,String Dni, int edat, double altura, char sexe, boolean casat) {
 		super();
 		this.nom = nom;
+		this.DNI = Dni;
 		this.edat = edat;
 		this.altura = altura;
 		this.sexe = sexe;
 		this.casat = casat;
 	}
-	//Contructor para crear solteros
-	public Persona(String nom, int edat, double altura, char sexe) {
-		super();
-		this.nom = nom;
-		this.edat = edat;
-		this.altura = altura;
-		this.sexe = sexe;
-		this.casat = false;
-	}
 	//Getters
 	public String getNom() {
 		return nom;
 	}
-
 	public int getEdat() {
 		return edat;
 	}
@@ -46,6 +37,9 @@ public class Persona {
 	public boolean isCasat() {
 		return casat;
 	}
+	public String getDNI() {
+		return DNI;
+	}
 	//Setters
 	public void setNom(String nom) {
 		this.nom = nom;
@@ -56,6 +50,9 @@ public class Persona {
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
+	public void setDNI(String dNI) {
+		DNI = dNI;
+	}
 	public void setSexe(char sexe) {
 		this.sexe = sexe;
 	}
@@ -65,7 +62,7 @@ public class Persona {
 	
 	@Override
 	public String toString() {
-		return "Persona --> nom=" + nom + ", edat=" + edat + ", altura=" + altura + ", sexe=" + sexe + ", casat=" + casat
+		return "Persona --> nom=" + nom + ", DNI "+ DNI+", edat=" + edat + ", altura=" + altura + ", sexe=" + sexe + ", casat=" + casat
 				+ "]";
 	}
 
