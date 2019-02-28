@@ -26,8 +26,10 @@ public class FRmFigures {
 				insertarFigura(fig, e);
 				break;
 			case 2:
+				contarFiguras(fig);
 				break;
 			case 3:
+				sumarAreaCirculos(fig);
 				break;
 			case 4:
 				mostrarDatos(fig);
@@ -139,12 +141,18 @@ public class FRmFigures {
 			}
 		}
 		System.out.println("=======================");
-		System.out.println("Hay un total de "+cont_cercles + " Circulos "+cont_quadrat+", Quadrados"+cont_triangle+", Triangles ");
+		System.out.println("Hay un total de "+cont_cercles + " Circulos ,"+cont_quadrat+" Quadrados ," +cont_triangle+" Triangles ");
 		System.out.println("=======================");
 	}
 	public double sumarAreaCirculos(ArrayList<Figura> fig) {
 		System.out.println("=======================");
 		double res=0;
+		for (int i = 0; i < fig.size(); i++) {
+			if (fig.get(i) instanceof Cercle) {
+				res = res+fig.get(i).getArea();
+			}
+		}
+		System.out.println("El area total de todos los circulos es: "+res);
 		System.out.println("=======================");
 		return res;
 	}
