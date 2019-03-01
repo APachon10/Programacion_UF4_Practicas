@@ -1,4 +1,4 @@
-package Vehicles;
+package Ex2_3_Vehicles;
 
 public class Bici extends Vehicle{
 	private String tipo_bici;

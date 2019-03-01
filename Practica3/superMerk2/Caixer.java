@@ -35,9 +35,7 @@ public class Caixer extends Tipus_Empleat{
 	public double SalariDiari() {
 		int horas = getHoresTreballades();
 		double sal = 0.0;
-		for (int i = 0; i < horas; i++) {
-			sal = sal +15;
-		}
+		sal = horas*15;
 		return sal;
 	}
 

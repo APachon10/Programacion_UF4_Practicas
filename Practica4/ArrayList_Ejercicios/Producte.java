@@ -6,6 +6,9 @@ public class Producte {
 	private String name,tipe;
 	private double price;
 	//Constructors
+	public Producte() {
+		
+	}
 	public Producte(int code, int stock, String name, String tipe, double price) {
 		this.code = code;
 		this.stock = stock;

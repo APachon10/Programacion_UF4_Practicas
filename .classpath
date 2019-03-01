@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"></classpathentry>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7,6 +8,10 @@
 =======
 =======
 =======
+=======
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Practica_Jordi"/>
+>>>>>>> dev
 	<classpathentry kind="src" path="Practica4"/>
 >>>>>>> Practica4
 	<classpathentry kind="src" path="Practica3"/>
