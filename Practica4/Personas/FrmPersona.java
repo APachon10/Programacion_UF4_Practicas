@@ -91,17 +91,16 @@ public class FrmPersona {
 		System.out.print("Introduce el Dni de la persona que quieres eliminar: ");
 		String DNI = recogerCadenas();
 		boolean salir=false;
+		int i=0;
 		do {
-			for (int i = 0; i < people.size(); i++) {
-				if (people.get(i).getDNI() != DNI) {
-					System.out.println("Hola: " + people.get(i).getNom());
-					salir=false;
-				}else if (people.get(i).getDNI() == DNI) {
-					System.out.println("Encontrado: "+people.get(i).getNom());
-					people.remove(i);
-					salir=true;
-				}
+			if (people.get(i).getDNI().equals(DNI)) {
+				salir=false;
 			}
+			if (people.get(i).getDNI().equals(DNI)) {
+				people.remove(i);
+				salir=true;
+			}
+			i++;
 		} while (!salir);
 		System.out.println("======================");
 		System.out.println("Elemento Eliminado");
