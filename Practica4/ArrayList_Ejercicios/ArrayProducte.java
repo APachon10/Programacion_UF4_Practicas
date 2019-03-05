@@ -21,6 +21,7 @@ public class ArrayProducte extends Producte{
 			while (!salir) {
 				System.out.print("Codigo: ");
 				codigo = recogerEnteros();
+				System.out.println("Producto Repetido??--> " + productos.get(i).getCode());
 				if (productos.get(i).getCode()==codigo) {
 					System.out.println("Este codigo ya existe ");
 					salir=false;

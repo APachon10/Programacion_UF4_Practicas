@@ -37,6 +37,7 @@ public class FrmProducte {
 				break;
 			}
 		} while (op!=5);
+		System.out.println("Programa Terminado ");
 	}
 	//Metodos para recoer Datos
 	public static int recogerEnteros() {

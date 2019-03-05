@@ -38,7 +38,7 @@ public class FRmFigures {
 				System.out.println("Saliendo del Programa.... ");
 				break;
 			}
-		} while (op!=3);
+		} while (op!=0);
 		System.out.println("Programa Terminado :)");
 	}
 	public Figura insertarFigura(ArrayList<Figura> fig,Figura e ) {
