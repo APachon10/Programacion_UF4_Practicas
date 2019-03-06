@@ -10,6 +10,7 @@
 =======
 =======
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Practica5_Interfaces"/>
 	<classpathentry kind="src" path="Practica_Jordi"/>
 >>>>>>> dev
 	<classpathentry kind="src" path="Practica4"/>
