@@ -1,4 +1,4 @@
-package Ej1;
+package Practica2;
 
 public class Persona {
 	private String nom;
