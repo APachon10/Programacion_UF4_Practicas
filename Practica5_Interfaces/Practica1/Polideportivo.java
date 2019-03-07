@@ -1,21 +1,19 @@
 package Practica1;
 
-public class Polideportivo {
-	private String nom;
-	//Constructors
-	public Polideportivo(String nom) {
-		this.nom = nom;
+public class Polideportivo extends Edifici implements ITipoInstalacion,ISuperficie{
+	public Polideportivo() {
+		
 	}
-	//Getters
-	public String getNom() {
-		return nom;
-	}
-	//Setters
-	public void setNom(String nom) {
-		this.nom = nom;
+	public Polideportivo(String nom, double superficie) {
+		super(nom, superficie);
 	}
 	@Override
-	public String toString() {
-		return "Polideportivo--> nom=" + nom;
+	public double getSuperficie(double superficie) {
+		return superficie;
 	}
+	@Override
+	public int getTipusInstalacio() {
+		return 1;
+	}
+	
 }

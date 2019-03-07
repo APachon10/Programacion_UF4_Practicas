@@ -1,6 +1,5 @@
 package Practica1;
 
-public interface IEsportiva {
+public interface ISuperficie {
 	public double getSuperficie(double superficie);
-	public int getTipusInstalacio();
 }
