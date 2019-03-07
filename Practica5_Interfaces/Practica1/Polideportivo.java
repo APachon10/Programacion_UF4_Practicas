@@ -15,5 +15,10 @@ public class Polideportivo extends Edifici implements ITipoInstalacion,ISuperfic
 	public int getTipusInstalacio() {
 		return 1;
 	}
+	@Override
+	public String toString() {
+		return "Polideportivo--> "+super.toString();
+	}
+	
 	
 }
