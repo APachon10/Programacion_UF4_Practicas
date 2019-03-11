@@ -2,23 +2,41 @@ package Ejercicio3;
 
 public class Alumne implements Usuari{
 	private String nombre;
-	private int dias_falta;
+	private int horas_faltadas;
 	
-	public Alumne(String nombre, int dias_falta) {
+	public Alumne(String nombre, int horas_faltadas) {
 		this.nombre = nombre;
-		this.dias_falta = dias_falta;
+		this.horas_faltadas = horas_faltadas;
 	}
 	@Override
-	public String absencies(int dias_faltados) {
-		int horas=0;
-		String mensaje ="";
-		for (int i = 0; i <= dias_faltados; i++) {
-			horas = i*24;
-		}
-		System.out.println("Horas Faltadas : "+horas);
-		if (horas >40) {
-			mensaje = "El Alumno ha superado el % de faltas ";
+	public String absencies(int horas_faltadas) {
+		String mensaje = "";
+		System.out.println("Horas Faltadas : "+horas_faltadas);
+		if (horas_faltadas >40) {
+			mensaje = "El Alumno "+nombre+" ha superado el % de faltas ";
+		}else {
+			mensaje = "El Alumno "+ nombre +" Esta por debajo del 15% de faltas";
 		}
 		return mensaje;
 	}
+	//Getters
+	public String getNombre() {
+		return nombre;
+	}
+	public int getHoras_faltadas() {
+		return horas_faltadas;
+	}
+	//Setters
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void setHoras_faltadas(int horas_faltadas) {
+		this.horas_faltadas = horas_faltadas;
+	}
+	@Override
+	public String toString() {
+		return "Alumne --> nombre=" + nombre + ", horas_faltadas=" + horas_faltadas;
+	}
+	
+	
 }
