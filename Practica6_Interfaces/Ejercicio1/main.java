@@ -17,11 +17,10 @@ public class main {
 		System.out.println("========================");
 
 		Persona p1 = new Persona(persona.get(0).getNom(),persona.get(0).getEdad(),persona.get(0).getAlçada());
-
 		for (int i = 0; i < persona.size(); i++) {
-			if (p1.compareTo(persona.get(i)) > 0 ) { 
+			if (p1.compareTo(persona.get(i))==1 ) { 
 				System.out.println("La persona p1: es mayor. " +p1.toString()); 
-			}else if (p1.compareTo(persona.get(i)) < 0 ) {
+			}else if (p1.compareTo(persona.get(i))==0 ) {
 				System.out.println("La persona p1: es menor. "+p1.toString()); 
 			}else { 
 				System.out.println ("La persona p1 es igual a la persona p2: " +p1.toString()); 
