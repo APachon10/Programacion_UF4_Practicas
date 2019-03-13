@@ -14,15 +14,11 @@ public class Persona implements Comparable<Persona>{
 		this.edad = edad;
 		this.alçada = alçada;
 	}
-	public Persona(ArrayList<Persona> personas) {
-		this.personas = personas;
-	}
 	//Metodo para ordenar elementos 
 	@Override
 	public int compareTo(Persona o) {
 		int res =0;
 		if (this.edad > o.edad) {
-			
 			res =1;
 		}else if (this.edad<o.edad) {
 			res=0;
