@@ -15,7 +15,6 @@ public class main {
 		mostrarDatos(persona);
 		System.out.println("========================");
 
-//		Collections.sort(persona,new compareHeight());
 		Collections.sort(persona);
 
 		System.out.println("Lista de Personas ordenas por Altura");
