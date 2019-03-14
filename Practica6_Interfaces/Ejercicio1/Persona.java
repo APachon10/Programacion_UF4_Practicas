@@ -17,39 +17,16 @@ public class Persona implements Comparable<Persona>{
 	//Metodo para ordenar elementos 
 	@Override
 	public int compareTo(Persona o) {
-		int res =0;
-		if (this.edad > o.edad) {
+/*		int res =0;
+		if (this.alçada > o.alçada) {
 			res =1;
-		}else if (this.edad<o.edad) {
+		}else if (this.alçada<o.alçada) {
 			res=0;
 		}
-		return res;
+		return res;*/
+		return (int)(this.alçada - o.alçada);
 	}
-	//Metodos para gestionar El ArrayList
-	public ArrayList<Persona> rellenarArrayList() {
-		Persona e = new Persona("Dani",22,1.87);
-		personas.add(e);
-		Persona e2=new Persona("Pol",52,1.73);
-		personas.add(e2);
-		
-		Persona e3=new Persona("Manel",27,1.58);
-		personas.add(e3);
-		
-		Persona e4=new Persona("David",25,1.64);
-		personas.add(e4);
-		
-		Persona e5=new Persona("Pere",80,1.84);
-		personas.add(e5);
-		return personas;
-	} 
-	public void insertarElemento(Persona e) {
-		personas.add(e);
-	}
-	public void mostrarDatos(ArrayList<Persona> people) {
-		for (int i = 0; i < people.size(); i++) {
-			System.out.println(people.get(i));
-		}
-	}
+
 	@Override
 	public String toString() {
 		return "nom=" + nom + ", edad=" + edad + ", alçada=" + alçada;
