@@ -17,14 +17,13 @@ public class Persona implements Comparable<Persona>{
 	//Metodo para ordenar elementos 
 	@Override
 	public int compareTo(Persona o) {
-/*		int res =0;
+		int res =0;
 		if (this.alçada > o.alçada) {
-			res =1;
+			res =-1;
 		}else if (this.alçada<o.alçada) {
-			res=0;
+			res=1;
 		}
-		return res;*/
-		return (int)(this.alçada - o.alçada);
+		return res;
 	}
 
 	@Override

@@ -15,6 +15,7 @@ public class main {
 		mostrarDatos(persona);
 		System.out.println("========================");
 
+//		Collections.sort(persona,new compareHeight());
 		Collections.sort(persona);
 
 		System.out.println("Lista de Personas ordenas por Altura");
@@ -24,19 +25,21 @@ public class main {
 		System.out.println();
 		System.out.println("Programa Finalizado ");
 	}
+	
+	
 	//Metodos para gestionar El ArrayList
 	public static ArrayList<Persona> rellenarArrayList(ArrayList<Persona> people) {
 		Persona e = new Persona("Dani",22,1.87);
 		people.add(e);
 		Persona e2=new Persona("Pol",52,1.73);
 		people.add(e2);
-		
+
 		Persona e3=new Persona("Manel",27,1.58);
 		people.add(e3);
-		
+
 		Persona e4=new Persona("David",25,1.64);
 		people.add(e4);
-		
+
 		Persona e5=new Persona("Pere",80,1.84);
 		people.add(e5);
 		return people;
