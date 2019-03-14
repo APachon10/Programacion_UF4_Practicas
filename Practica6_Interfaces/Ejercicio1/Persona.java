@@ -6,21 +6,21 @@ public class Persona implements Comparable<Persona>{
 	ArrayList<Persona > personas= new ArrayList<Persona>();
 	private String nom;
 	private int edad;
-	private double alçada;
+	private double altura;
 	//Constructor
 	
-	public Persona(String nom, int edad, double alçada) {
+	public Persona(String nom, int edad, double altura) {
 		this.nom = nom;
 		this.edad = edad;
-		this.alçada = alçada;
+		this.altura = altura;
 	}
 	//Metodo para ordenar elementos 
 	@Override
 	public int compareTo(Persona o) {
 		int res =0;
-		if (this.alçada > o.alçada) {
+		if (this.altura > o.altura) {
 			res =-1;
-		}else if (this.alçada<o.alçada) {
+		}else if (this.altura<o.altura) {
 			res=1;
 		}
 		return res;
@@ -28,7 +28,7 @@ public class Persona implements Comparable<Persona>{
 
 	@Override
 	public String toString() {
-		return "nom=" + nom + ", edad=" + edad + ", alçada=" + alçada;
+		return "nom=" + nom + ", edad=" + edad + ", altura=" + altura;
 	}
 	public ArrayList<Persona> getPersonas() {
 		return personas;
@@ -40,8 +40,8 @@ public class Persona implements Comparable<Persona>{
 	public int getEdad() {
 		return edad;
 	}
-	public double getAlçada() {
-		return alçada;
+	public double getaltura() {
+		return altura;
 	}
 	//Setters
 	public void setPersonas(ArrayList<Persona> personas) {
@@ -53,8 +53,8 @@ public class Persona implements Comparable<Persona>{
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	public void setAlçada(double alçada) {
-		this.alçada = alçada;
+	public void setaltura(double altura) {
+		this.altura = altura;
 	}
 	
 }
